@@ -27,57 +27,71 @@
               <div class="hero-image-content">
                 <% imagenes.forEach(video => { %>
                   <div class="video">
-                    <video src="/images/presentacion/<%= video %>" autoplay controls muted></video>
+                    <video src="/images/presentacion/<%= video %>" data-smart-video controls muted></video>
                   </div>
                 <% }) %>
               </div>
           </aside>
-      </article>
+        </article>
       </section>
 
 
 
-      <div class="hogares">
-        <section id="puerto-gallo">
-          <article class="puerto-gallo">
-            <div class="hogar">
-              <img src="/images/bg.jpg" class="card-img-top img-fluid" alt="Puerto Gallo">
-              <div class="card-body">
-                <h5 class="card-title">Puerto Gallo</h5>
-                <p class="card-text">Puerto Gallo es una bella y acogedora casa 🏠 para 10 personas, ubicada sobre el Rio Espera, Delta del Tigre, a 70 minutos del puerto en lancha colectiva de la empresa interisleña 🛳 y a 20 minutos en lancha remis o particular 🚤."</p>
-                <a href="/puerto-gallo" class="btn btn-primary">¡Conoce más!</a>
+      <section class="hogares">
+        <article class="hero-image" style="--hero-image: url('/images/slider-bg.jpeg'); --hero-attachment: fixed;">
+          <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.5);">
+              <div class="hero-image-content">
+                <section id="puerto-gallo">
+                  <article class="puerto-gallo">
+                    <div class="hogar">
+                      <img src="/images/bg.jpg" class="card-img-top img-fluid" alt="Puerto Gallo">
+                      <div class="card-body">
+                        <h5 class="card-title">Puerto Gallo</h5>
+                        <p class="card-text">Puerto Gallo es una bella y acogedora casa para 10 personas, ubicada sobre el Rio Espera, Delta del Tigre, a 70 minutos del puerto en lancha colectiva de la empresa interisleña y a 20 minutos en lancha remis o particular."</p>
+                        <a href="/puerto-gallo" class="btn btn-primary">¡Conoce más!</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="chana">
+                    <div class="hogar">
+                      <img src="/images/chanapresentacion.jpg" class="card-img-top" alt="Chana">
+                      <div class="card-body">
+                        <h5 class="card-title">Chana</h5>
+                        <p class="card-text">Chaná es una cómoda cabaña de 50 metros cuadrados ubicada sobre el rio Espera, a unos 500 metros hacia el norte de la boca del Canal 8, en una zona muy tranquila de la Primera Sección de islas del delta de Tigre.</p>
+                        <a href="/chana" class="btn btn-primary">¡Conoce más!</a>
+                      </div>
+                    </div>
+                  </article>
+                  <article class="timbu">
+                    <div class="hogar">
+                      <img src="/images/timbu.jpg" class="card-img-top" alt="Timbu">
+                      <div class="card-body">
+                        <h5 class="card-title">Timbu</h5>
+                        <p class="card-text">Timbú es una cómoda cabaña de 45 metros cuadrados ubicada sobre el rio Espera, a unos 500 metros hacia el norte de la boca del Canal 8, en una zona muy tranquila de la Primera Sección de islas del Tigre.</p>
+                        <a href="/timbu" class="btn btn-primary">¡Conoce más!</a>
+                      </div>
+                    </div>
+                  </article>
+                </section> 
+        
+                <div class="button-up">
+                  <a class="move" href="#home"><i class="fas fa-chevron-up"></i></a>
+                </div>
+              
               </div>
-            </div>
-          </article>
-          <article class="chana">
-            <div class="hogar">
-              <img src="/images/chanapresentacion.jpg" class="card-img-top" alt="Chana">
-              <div class="card-body">
-                <h5 class="card-title">Chana</h5>
-                <p class="card-text">Chaná es una cómoda cabaña 🏡 de 50 metros cuadrados ubicada sobre el rio Espera, a unos 500 metros hacia el norte de la boca del Canal 8, en una zona muy tranquila de la Primera Sección de islas del delta de Tigre.</p>
-                <a href="/chana" class="btn btn-primary">¡Conoce más!</a>
-              </div>
-            </div>
-          </article>
-          <article class="timbu">
-            <div class="hogar">
-              <img src="/images/timbu.jpg" class="card-img-top" alt="Timbu">
-              <div class="card-body">
-                <h5 class="card-title">Timbu</h5>
-                <p class="card-text">Timbú es una cómoda cabaña 🏡 de 45 metros cuadrados ubicada sobre el rio Espera, a unos 500 metros hacia el norte de la boca del Canal 8, en una zona muy tranquila de la Primera Sección de islas del Tigre.</p>
-                <a href="/timbu" class="btn btn-primary">¡Conoce más!</a>
-              </div>
-            </div>
-          </article>
-        </section> 
+          </aside>
+        </article>
+      </section> 
 
-        <div class="button-up">
-          <a class="move" href="#home"><i class="fas fa-chevron-up"></i></a>
-        </div>
-      </div>
-
-      <%- include("./partials/whatsapp.ejs")  %> 
-      <%- include("./partials/footer.ejs")  %>
+      <%- include("./partials/whatsapp.ejs")  %>
+      <article class="hero-image-footer" style="--hero-image: url('/images/slider-bg.jpeg'); --hero-attachment: fixed;">
+        <aside class="hero-image-opacity-footer" style="--hero-opacity-color: rgba(0,0,0,0.5);">
+            <div class="hero-image-content">
+              <%- include("./partials/footer.ejs")  %>
+            </div>
+        </aside>
+      </article>
+      
     </div>
   </body>
 </html>

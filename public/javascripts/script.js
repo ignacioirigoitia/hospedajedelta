@@ -19,3 +19,31 @@
         $menu.classList.remove("is-active");
     });
 })(document);
+
+const d = document,
+    w = window;
+
+d.addEventListener("DOMContentLoaded", (e) => {
+    console.log("vinculado")
+    const $videos = d.querySelectorAll("video[data-smart-video]");
+
+    const cb = (entries) => {
+        entries.forEach((entry) => {
+            if(entry.isIntersecting){
+                entry.target.play();
+            }else{
+                entry.target.pause();
+            };
+
+            w.addEventListener("visibilitychange", (e) =>
+                d.visibilityState === "visible"
+                ? entry.target.pause()
+                : entry.target.play()
+            );
+        });
+    };
+
+    const observer = new IntersectionObserver(cb, { threshold : 1 });
+
+    $videos.forEach((el) => observer.observe(el));
+});

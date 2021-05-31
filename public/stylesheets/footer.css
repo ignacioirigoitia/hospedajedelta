@@ -3,7 +3,6 @@
     border-radius: 10px;
     min-height: 10vh;
     width: 100%;
-    margin-top: 40px;
     margin-bottom: 20px;
     padding: 10px;
 }
@@ -46,4 +45,22 @@
 
 .footer .secciones ul li:hover{
     color: #5AFF3D;
+}
+
+.hero-image-footer{
+    margin-bottom: 150px;
+    background-image: var(--hero-image);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: var(--hero-attachment);
+}
+
+.hero-image-opacity-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--hero-opacity-color);
 }
