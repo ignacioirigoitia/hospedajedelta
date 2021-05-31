@@ -1,0 +1,49 @@
+.footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    min-height: 10vh;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.footer .insta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.footer .insta span,h4,i{
+    font-size: 3rem;
+    color: white;
+}
+
+.footer .insta i:hover{
+    color: #5AFF3D;
+}
+
+.footer .instagram{
+    margin: 15px 0;
+}
+
+.footer .insta p{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.footer .secciones ul{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 15px 0 ;
+}
+.footer .secciones ul li{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.footer .secciones ul li:hover{
+    color: #5AFF3D;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <%- include("./partials/head.ejs")  %> 
+  <body>
+      <div class="puerto-gallo container-fluid">
+        <%- include("./partials/header.ejs")  %> 
+        <div class="titulo-casa">
+          <h1>Cha<span class="gallo">na.</span></h1>
+        </div>
+  
+        <div class="slider">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/images/chanapresentacion.jpg" class="d-block w-100" alt="...">
+              </div>
+              <% imagenes.forEach(imagen => { %>
+                <div class="carousel-item">
+                  <img src="/images/<%= imagen %> " class="d-block w-100 img-fluid" alt="...">
+                </div>
+              <% }) %>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+  
+        <div class="contenido">
+          <p>
+            <strong>CHANA</strong> es una cómoda cabaña 🏡 de 50 metros cuadrados ubicada sobre el rio Espera, a unos 500 metros hacia el norte de la boca del Canal 8, en una zona muy tranquila de la Primera Sección de islas del delta de Tigre. En lancha colectiva de la empresa Interisleña 🛳, se llega en 75 minutos, mientras que en lancha taxi o particular, sólo se demora 20 minutos 🚤. El muelle es por el momento compartido con Timbú su cabaña hermana, cuyos nombres recuerdan a un pueblo originario que habitó el Delta del Paraná 🌿💚.
+          </p>
+          <br>
+          <span>
+            La casa cuenta con los siguientes servicios:
+          </span>
+          <ul>
+            <li>📌 - TV y WIFI </li>
+            <li>📌 - Cuarto matrimonial con aire acondicionado y otro con cuatro cuchetas</li>
+            <li>📌 - En el espacioso living, posee además  dos divanes que también pueden ser utilizados eventualmente a modo de cama</li>
+            <li>📌 - En todos los ambientes hay ventilador de techo </li>
+            <li>📌 - Cuenta con una cocina con horno y cuatro hornallas , una heladera, cubiertos y vajillas para 8 personas, mesada y una pileta con agua caliente, en tanto el comedor cuenta con seis sillas </li>
+            <li>📌 - El baño es completo, con lavatorio, inodoro, bidet y ducha con agua caliente</li>
+            <li>📌 - Espacioso deck frente al rio con dos divanes y un quincho con parrilla en el que pueden deleitarse diez comensales.</li>
+            <li>📌 - Ropa de cama y toalla para 10</li>
+          </ul>
+          <br><br>
+          <p>
+            ¿COMO RESERVAR?
+            <br>
+            Para reservar se debe depositar 💵 el 50% de lo pactado o transferirlo a la cuenta  N° 3561636, de Alberto Enrique  Dearriba, del Banco Santander, sucursal 005, Monserrat.  El  CBU es 07200052 88000035616368 y el CUIL es 20-04547648-1.  Luego se debe enviar el comprobante 📩 correspondiente a la dirección electrónica  jdearribayulis@gmail.com. ¡Allí quedará cerrada la reserva! 😃✅
+          </p>
+        </div>
+  
+        <h3>Tambíen conoce:</h3>
+  
+        <div class="mostrar-casas">
+          <a href="/puerto-gallo" class="btn btn-primary">Puerto Gallo</a>
+          <a href="/chana" class="btn btn-primary">Timbu</a>
+        </div>
+
+
+      </div>
+      <%- include("./partials/whatsapp.ejs")  %> 
+      <%- include("./partials/footer.ejs")  %>
+  </body>
+</html>

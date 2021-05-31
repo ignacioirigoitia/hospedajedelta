@@ -1,0 +1,70 @@
+.puerto-gallo .titulo-casa{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.puerto-gallo .titulo-casa h1{
+    font-family:  var(--body-font);
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+}
+
+.puerto-gallo .titulo-casa span{
+    color: #5AFF3D;
+}
+
+.puerto-gallo .slider{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 50px 0;
+    padding: 10px;
+}
+
+.puerto-gallo .slider .carousel-inner img{
+    width: 100%;
+    height: 880px;
+}
+
+.puerto-gallo .contenido{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 3rem;
+}
+
+.puerto-gallo .mostrar-casas{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.puerto-gallo h3{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 50px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.puerto-gallo .mostrar-casas a{
+    width: 40%;
+    background-color: #5AFF3D !important;
+    border: #5AFF3D !important;
+    color: black;
+    font-weight: bold;
+    font-size: 3rem;
+    border-radius: 10px !important;
+}
+
+.puerto-gallo .mostrar-casas a:hover{
+    color: white;
+}

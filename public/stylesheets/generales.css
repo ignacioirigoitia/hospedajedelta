@@ -1,0 +1,89 @@
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* === VARIABLES CSS === */
+:root{
+    --header-height: 3rem;
+    --font-semi: 600;
+    --first-color: rgba(9, 75, 18);
+    --first-alpha-color: rgba(0, 75, 18, 0.75);
+    --text-color: #222;
+    --white-color: #fff;
+    --gray-light-color: #f3f3f3;
+    --gray-color: #ccc;
+    --gray-dark-color: #666;
+    --black-color: #000;
+    --white-alpha-color: rgba(255, 255, 255, 0.5);
+    --black-alpha-color: rgba(0, 0, 0, 0.75);
+    --header-height: 4rem;
+}
+  
+  /* === Fuente y tipografía === */
+:root{
+    --body-font: 'Roboto', sans-serif;;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+}
+
+/* === Margenes === */
+:root{
+    --mb-1: 0.5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+
+body{
+  overflow-x: hidden;
+  color: var(--text-color);
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+html{
+    box-sizing: border-box;
+    font-family: var(--body-font);
+    font-size: 16px;
+    scroll-behavior: smooth; /* el scroll-behavior smooth nos desplaza hacia el ancla de una forma fluida, el auto lo hace automaticamente y es el valor por defecto; */
+}
+
+h1,h2,p{
+    margin: 0;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    opacity: 0.75;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  p{
+    line-height: 1.6;  /* le da interlineado a los parrafos */
+}
+
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+
+.none{
+  display: none;
+}
