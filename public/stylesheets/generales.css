@@ -87,3 +87,8 @@ h1,h2,p{
 .none{
   display: none;
 }
+
+img{
+  max-width: 100%;
+  height: auto;
+}
