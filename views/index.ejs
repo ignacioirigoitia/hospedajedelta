@@ -14,7 +14,7 @@
                         <span style="--hero-textcolor: var(--white-color);">Tu Hospedale Delta.</span>
                     </h2>
                     <div class="button-down">
-                      <a class="move" href="#puerto-gallo"><i class="fas fa-chevron-down"></i></a>
+                      <a class="move" href="#atardecer"><i class="fas fa-chevron-down"></i></a>
                     </div>
                 </div>
             </aside>
@@ -25,11 +25,18 @@
         <article class="hero-image" style="--hero-image: url('/images/slider-bg.jpeg'); --hero-attachment: fixed;">
           <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.5);">
               <div class="hero-image-content">
-                <% imagenes.forEach(video => { %>
-                  <div class="video">
-                    <video src="/images/presentacion/<%= video %>" data-smart-video controls muted></video>
-                  </div>
-                <% }) %>
+                <div class="video-content" id="atardecer">
+                  <h3>Aqui podras encontrarte con este maravilloso atardecer...</h3>
+                  <video src="/images/presentacion/<%= imagenes[0] %> " muted controls data-smart-video></video>
+                </div>
+                <div class="video-content">
+                  <h3>O con este maravilloso bosque...</h3>
+                  <video src="/images/presentacion/<%= imagenes[1] %> " muted controls data-smart-video></video>
+                </div>
+                <div class="video-content">
+                  <h3>Espero que ya andes con ganas de emprender esta aventura...</h3>
+                  <video src="/images/presentacion/<%= imagenes[2] %> " muted controls data-smart-video></video>
+                </div>
               </div>
           </aside>
         </article>
@@ -37,7 +44,7 @@
 
 
 
-      <section class="hogares">
+     <!--  <section class="hogares">
         <article class="hero-image" style="--hero-image: url('/images/slider-bg.jpeg'); --hero-attachment: fixed;">
           <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.5);">
               <div class="hero-image-content">
@@ -82,16 +89,18 @@
           </aside>
         </article>
       </section> 
-
-      <%- include("./partials/whatsapp.ejs")  %>
+ -->
+      <%- /* include("./partials/whatsapp.ejs") */  %>
       <article class="hero-image-footer" style="--hero-image: url('/images/slider-bg.jpeg'); --hero-attachment: fixed;">
         <aside class="hero-image-opacity-footer" style="--hero-opacity-color: rgba(0,0,0,0.5);">
             <div class="hero-image-content">
-              <%- include("./partials/footer.ejs")  %>
+              <!-- <%- /* include("./partials/footer.ejs") */  %> -->
             </div>
         </aside>
       </article>
       
     </div>
+    <script src="/javascripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
   </body>
 </html>

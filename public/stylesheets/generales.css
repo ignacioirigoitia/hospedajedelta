@@ -2,13 +2,11 @@
 *::after,
 *::before{
     box-sizing: inherit;
-    margin: 0;
-    padding: 0;
 }
 
 /* === VARIABLES CSS === */
 :root{
-    --header-height: 3rem;
+    --header-height: 4rem;
     --font-semi: 600;
     --first-color: rgba(9, 75, 18);
     --first-alpha-color: rgba(0, 75, 18, 0.75);
@@ -20,7 +18,7 @@
     --black-color: #000;
     --white-alpha-color: rgba(255, 255, 255, 0.5);
     --black-alpha-color: rgba(0, 0, 0, 0.75);
-    --header-height: 4rem;
+    --max-width: 1200px;
 }
   
   /* === Fuente y tipografía === */
@@ -44,8 +42,9 @@
 body{
   overflow-x: hidden;
   color: var(--text-color);
-  padding: 0 !important;
-  margin: 0 !important;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 html{
@@ -65,6 +64,7 @@ h1,h2,p{
   }
   a{
     text-decoration: none;
+    transition: all 0.5s ease-out;
   }
   a:hover{
     opacity: 0.75;
@@ -75,6 +75,11 @@ h1,h2,p{
   }
   p{
     line-height: 1.6;  /* le da interlineado a los parrafos */
+}
+
+h3{
+  font-size: 1.25rem;
+  color: white;
 }
 
 
@@ -91,4 +96,8 @@ h1,h2,p{
 img{
   max-width: 100%;
   height: auto;
+}
+
+.section {
+  padding: 2rem 1rem;
 }
