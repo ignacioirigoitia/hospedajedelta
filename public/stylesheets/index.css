@@ -17,6 +17,7 @@
 }
 
 .hero-image-title{
+    padding: 1.5rem;
     font-size: 2rem;
     color: var(--hero-textcolor);
 }
@@ -121,6 +122,28 @@
 .home .button-up i:hover{
     color: var(--first-color);
 }
+
+@media screen and (max-width: 450px){
+    .hero-image{
+        background-image: var(--hero-image);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+}
+
+@supports ( -webkit-touch-callout : none) {
+    .hero-image {
+    background-attachment:scroll
+    }
+    }
+    
+    @supports not ( -webkit-touch-callout : none) {
+    .hero-image {
+    background-attachment: fixed;
+    }
+    }
 
 @media screen and (min-width: 1024px){
     .home .presentacion .titulo-home h1{
