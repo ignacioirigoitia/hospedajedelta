@@ -3,8 +3,8 @@
     border-radius: 10px;
     min-height: 10vh;
     width: 100%;
-    margin-bottom: 20px;
     padding: 10px;
+    margin-bottom: 2rem;
 }
 
 .footer .insta{
@@ -15,12 +15,12 @@
 }
 
 .footer .insta span,h4,i{
-    font-size: 3rem;
+    font-size: 1rem;
     color: white;
 }
 
 .footer .insta i:hover{
-    color: #5AFF3D;
+    color: var(--first-color);
 }
 
 .footer .instagram{
@@ -39,16 +39,15 @@
 }
 .footer .secciones ul li{
     color: white;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .footer .secciones ul li:hover{
-    color: #5AFF3D;
+    color: var(--first-color);
 }
 
 .hero-image-footer{
-    margin-bottom: 150px;
     background-image: var(--hero-image);
     background-repeat: no-repeat;
     background-position: center;

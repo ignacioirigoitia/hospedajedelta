@@ -44,14 +44,31 @@
 
 
 
-     <!--  <section class="hogares">
+      <section>
+        <article class="hero-image" style="--hero-image: url('/images/seccion2.png'); --hero-attachment: fixed;">
+            <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.4);">
+                <div class="hero-image-content">
+                    <h2 class="hero-image-title" style="--hero-textcolor: var(--white-color);">
+                        Y ahora conoce los mejores<br>
+                        <span style="--hero-textcolor: var(--white-color);">Hogares para disfrutar este paraiso</span>
+                    </h2>
+                    <div class="button-down">
+                      <a class="move" href="#puerto-gallo"><i class="fas fa-chevron-down"></i></a>
+                    </div>
+                </div>
+            </aside>
+        </article>
+      </section>
+
+
+     <section class="hogares">
         <article class="hero-image" style="--hero-image: url('/images/slider-bg.jpeg'); --hero-attachment: fixed;">
           <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.5);">
               <div class="hero-image-content">
                 <section id="puerto-gallo">
                   <article class="puerto-gallo">
                     <div class="hogar">
-                      <img src="/images/bg.jpg" class="card-img-top img-fluid" alt="Puerto Gallo">
+                      <img src="/images/puerto-gallo-home.png" class="card-img-top img-fluid puerto-gallo-img" alt="Puerto Gallo">
                       <div class="card-body">
                         <h5 class="card-title">Puerto Gallo</h5>
                         <p class="card-text">Puerto Gallo es una bella y acogedora casa para 10 personas, ubicada sobre el Rio Espera, Delta del Tigre, a 70 minutos del puerto en lancha colectiva de la empresa interisleña y a 20 minutos en lancha remis o particular."</p>
@@ -89,12 +106,11 @@
           </aside>
         </article>
       </section> 
- -->
-      <%- /* include("./partials/whatsapp.ejs") */  %>
+      <%- include("./partials/whatsapp.ejs")  %>
       <article class="hero-image-footer" style="--hero-image: url('/images/slider-bg.jpeg'); --hero-attachment: fixed;">
         <aside class="hero-image-opacity-footer" style="--hero-opacity-color: rgba(0,0,0,0.5);">
             <div class="hero-image-content">
-              <!-- <%- /* include("./partials/footer.ejs") */  %> -->
+              <%- include("./partials/footer.ejs") %>
             </div>
         </aside>
       </article>

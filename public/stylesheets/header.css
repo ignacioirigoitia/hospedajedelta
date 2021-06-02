@@ -19,7 +19,6 @@
 }
 
 .menu-btn{
-    margin-right: 10px;
     outline: thin solid var(--white-color);
     border: 0;
     cursor: pointer;
