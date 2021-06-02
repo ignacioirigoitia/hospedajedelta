@@ -2,67 +2,106 @@
 <html>
   <%- include("./partials/head.ejs")  %> 
   <body>
-    <div class="puerto-gallo container-fluid">
-      <%- include("./partials/header.ejs")  %> 
-      <div class="titulo-casa">
-        <h1>Puerto <span class="gallo">Gallo.</span></h1>
-      </div>
+    <div class="puerto-gallo">
+      <%- include("./partials/header.ejs")  %>
 
-      <div class="slider">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="/images/bg.jpg" class="d-block w-100" alt="...">
-            </div>
-            <% imagenes.forEach(imagen => { %>
-              <div class="carousel-item">
-                <img src="/images/<%= imagen %> " class="d-block w-100 img-fluid" alt="...">
+      <article class="hero-image" style="--hero-image: url('/images/puerto-gallo-home.png'); --hero-attachment: fixed;">
+        <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.6);">
+            <div class="hero-image-content">
+              <div class="titulo-gallo">
+                <div class="titulo-casa">
+                  <h1>Puerto <span class="gallo">Gallo.</span></h1>
+                </div>
+                <div class="video-content">
+                  <video src="/images/puerto-gallo-epico.mp4" autoplay loop muted controls data-smart-video></video>
+                </div>
               </div>
-            <% }) %>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+            </div>
+          </aside>
+      </article>
 
-      <div class="contenido">
-        <p>
-          <strong>Puerto Gallo</strong> es una bella y acogedora casa 🏠 para 10 personas, ubicada sobre el Rio Espera, Delta del Tigre, a 70 minutos del puerto en lancha colectiva de la empresa interisleña 🛳 y a 20 minutos en lancha remis o particular 🚤. Tiene tres cuartos (dos matrimoniales), un altillo, dos baños, living, comedor, cocina, galería, deck y quincho. Equipada con cocina con anafe a gas, cocina a leña, horno eléctrico, horno de barro y parrilla.
-        </p>
-        <br>
-        <span>
-          La casa cuenta con los siguientes servicios:
-        </span>
-        <ul>
-          <li>📌 - Muelle privado </li>
-          <li>📌 - Gran parque de 5 mil metro</li>
-          <li>📌 - Cancha de futbol 5</li>
-          <li>📌 - 2 heladeras </li>
-          <li>📌 - Ventiladores en todos los ambientes</li>
-          <li>📌 - Wi fi, Direct TV (PREPAGO) y equipo de música</li>
-          <li>📌 - Vajilla para 15 personas</li>
-          <li>📌 - Ropa de cama y toalla para 10</li>
-        </ul>
-        <br><br>
-          <p>
-            ¿COMO RESERVAR?
-            <br>
-            Para reservar se debe depositar 💵 el 50% de lo pactado o transferirlo a la cuenta  N° 3561636, de Alberto Enrique  Dearriba, del Banco Santander, sucursal 005, Monserrat.  El  CBU es 07200052 88000035616368 y el CUIL es 20-04547648-1.  Luego se debe enviar el comprobante 📩 correspondiente a la dirección electrónica  jdearribayulis@gmail.com. ¡Allí quedará cerrada la reserva! 😃✅
-          </p>
-      </div>
+      <article class="hero-image" style="--hero-image: url('/images/slider-bg.jpeg'); --hero-attachment: fixed;">
+        <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.6);">
+            <div class="hero-image-content">
+              <div class="slider">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="/images/bg.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <% imagenes.forEach(imagen => { %>
+                      <div class="carousel-item">
+                        <img src="/images/<%= imagen %> " class="d-block w-100 img-fluid" alt="...">
+                      </div>
+                    <% }) %>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
 
-      <h3>Tambíen conoce:</h3>
+              <div class="contenido">
+                <p>
+                  <strong>Puerto Gallo</strong> es una bella y acogedora casa 🏠 para 10 personas, ubicada sobre el Rio Espera, Delta del Tigre, a 70 minutos del puerto en lancha colectiva de la empresa interisleña 🛳 y a 20 minutos en lancha remis o particular 🚤. Tiene tres cuartos (dos matrimoniales), un altillo, dos baños, living, comedor, cocina, galería, deck y quincho. Equipada con cocina con anafe a gas, cocina a leña, horno eléctrico, horno de barro y parrilla.
+                </p>
+                <br>
+                <span>
+                  La casa cuenta con los siguientes servicios:
+                </span>
+                <ul>
+                  <li>📌 - Muelle privado </li>
+                  <li>📌 - Gran parque de 5 mil metro</li>
+                  <li>📌 - Cancha de futbol 5</li>
+                  <li>📌 - 2 heladeras </li>
+                  <li>📌 - Ventiladores en todos los ambientes</li>
+                  <li>📌 - Wi fi, Direct TV (PREPAGO) y equipo de música</li>
+                  <li>📌 - Vajilla para 15 personas</li>
+                  <li>📌 - Ropa de cama y toalla para 10</li>
+                </ul>
+                <br><br>
+                  <p>
+                    ¿COMO RESERVAR?
+                    <br>
+                    Para reservar se debe depositar 💵 el 50% de lo pactado o transferirlo a la cuenta  N° 3561636, de Alberto Enrique  Dearriba, del Banco Santander, sucursal 005, Monserrat.  El  CBU es 07200052 88000035616368 y el CUIL es 20-04547648-1.  Luego se debe enviar el comprobante 📩 correspondiente a la dirección electrónica  jdearribayulis@gmail.com. ¡Allí quedará cerrada la reserva! 😃✅
+                  </p>
+              </div>
+            </div>
+          </aside>
+      </article>
 
-      <div class="mostrar-casas">
-        <a href="/chana" class="btn btn-primary">Chana</a>
-        <a href="/timbu" class="btn btn-primary">Timbu</a>
-      </div>
+      <article class="hero-image" style="--hero-image: url('/images/fondo2.jpeg'); --hero-attachment: fixed;">
+        <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.6);">
+            <div class="hero-image-content">
+              <div class="titulo-gallo">
+                <div class="video-content">
+                  <video src="/images/puerto-gallo-epico-2.mp4" autoplay loop muted controls data-smart-video></video>
+                </div>
+                <div class="video-content">
+                  <video src="/images/puerto-gallo-vuelta-cerca.mp4" autoplay loop muted controls data-smart-video></video>
+                </div>
+                <div class="titulo-gallo">
+                  <div class="titulo-casa">
+                    <h3>Tambíen conoce:</h3>
+                  </div>
+                </div>
+                <div class="mostrar-casas">
+                  <a href="/chana" class="btn btn-primary">Chana</a>
+                  <a href="/timbu" class="btn btn-primary">Timbu</a>
+                </div>
+              </div>
+            </div>
+          </aside>
+      </article>
+
+      
+
+      
       
 
 
