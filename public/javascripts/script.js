@@ -20,7 +20,7 @@
     });
 })(document);
 
-/* const d = document,
+const d = document,
     w = window;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -46,4 +46,4 @@ d.addEventListener("DOMContentLoaded", (e) => {
     const observer = new IntersectionObserver(cb, { threshold : 1 });
 
     $videos.forEach((el) => observer.observe(el));
-}); */
+});
