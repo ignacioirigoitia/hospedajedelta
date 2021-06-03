@@ -1,0 +1,27 @@
+.caja-contacto{
+    background-color: rgba(0,0,0,0.5);
+    margin: 1rem;
+}
+
+.caja-contacto>*{
+    padding: .5rem;
+}
+
+.caja-contacto h4{
+    font-size: 1.75rem;
+}
+
+.caja-contacto p{
+    color: white;
+}
+
+.caja-contacto button{
+    margin-top: 20px;
+    width: 180px;
+    background-color: var(--first-color);
+    border: var(--first-color);
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    color: white;
+    align-self: center;
+}

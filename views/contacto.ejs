@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs")  %>
+<body>
+    <div class="contacto">
+        <%- include("./partials/header.ejs")  %>
+
+        <section id="inicio" class="home">
+            <article class="hero-image" style="--hero-image: url('/images/fondo1.jpeg'); --hero-attachment: fixed;">
+                <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.5);">
+                    <div class="hero-image-content">
+                        <h2 class="hero-image-title" style="--hero-textcolor: var(--white-color);">
+                            Contacto y Reserva
+                        </h2>
+                        <div class="button-down">
+                            <a class="move" href="#contacto"><i class="fas fa-chevron-down"></i></a>
+                        </div>
+                    </div>
+                </aside>
+            </article>
+        </section>
+
+        <section class="home">
+            <article class="hero-image" style="--hero-image: url('/images/slider-bg.jpeg'); --hero-attachment: fixed;">
+                <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.5);">
+                    <div class="hero-image-content" id="contacto">
+                        <div class="reserva caja-contacto">
+                            <h4>Reserva</h4>
+                            <p>Para reservar se debe depositar el 50% de lo pactado o transferirlo a la cuenta  N° 3561636, de Alberto Enrique  Dearriba, del Banco Santander, sucursal 005, Monserrat.  El  CBU es 07200052 88000035616368 y el CUIL es 20-04547648-1.  Luego se debe enviar el comprobante correspondiente a la dirección electrónica  jdearribayulis@gmail.com. ¡Allí quedará cerrada la reserva!</p>
+                        </div>
+                        <div class="contacto caja-contacto">
+                            <h4>Contacto</h4>
+                            <p>En Tu Hospedaje Delta tenemos una atención personalizada donde acompañamos a nuestros clientes a llevar de la mejor manera esta hermosa aventura. Podes comunicarte con nosotros via WhatsApp, Instagram o enviarnos un mensaje por este medio:</p>
+                            <textarea placeholder="Envianos tu mensaje y a la brevedad te responderemos" cols="50" rows="10"></textarea>
+                            <button>Enviar</button>
+                        </div>
+                    </div>
+                </aside>
+            </article>
+        </section>
+
+
+
+        <%- include("./partials/whatsapp.ejs")  %>
+      
+      <%- include("./partials/footer.ejs") %>
+    </div>
+</body>
+</html>
