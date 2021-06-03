@@ -1,0 +1,25 @@
+.mapa-como-llego{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0,0,0,0.4);
+    padding: .5rem;
+}
+
+.text-como-llego{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+
+.parrafo-como-llego>*{
+    padding: 1rem;
+}
+
+.como-llego .mostrar-casas a{
+    width: 180px;
+    background-color: var(--first-color) !important;
+    border: var(--first-color) !important;
+    font-family: var(--body-font) !important;
+    font-size: 1.5rem;
+    color: white;
+    align-self: center !important;
+}
