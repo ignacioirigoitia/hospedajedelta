@@ -31,18 +31,22 @@
                         <div class="contacto caja-contacto">
                             <h4>Contacto</h4>
                             <p>En Tu Hospedaje Delta tenemos una atención personalizada donde acompañamos a nuestros clientes a llevar de la mejor manera esta hermosa aventura. Podes comunicarte con nosotros via WhatsApp, Instagram o enviarnos un mensaje por este medio:</p>
-                            <textarea placeholder="Envianos tu mensaje y a la brevedad te responderemos" cols="50" rows="10"></textarea>
-                            <button>Enviar</button>
+                            <form class="contact-form" target="_blank" action="https://formsubmit.co/ignacio.irigoitia@gmail.com" method="POST">
+                                <textarea name="comments" placeholder="Envianos tu mensaje y a la brevedad te responderemos" cols="50" rows="10" required data-pattern="^.{1,255}$" title="Tu comentario no debe exceder los 255 caracteres"></textarea>
+                                <button type="submit">Enviar</button>
+                                <div class="contact-form-loader none">
+                                    <img src="/assets/loader.svg" alt="Cargando">
+                                </div>
+                                <div class="contact-form-response none">
+                                    <p class="conexion">Los datos han sido enviados</p>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </aside>
             </article>
         </section>
-
-
-
         <%- include("./partials/whatsapp.ejs")  %>
-      
       <%- include("./partials/footer.ejs") %>
     </div>
 </body>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs")  %>
+<body>
+    <div class="conoce-mas">
+        <%- include("./partials/header.ejs")  %>
+            <section id="inicio" class="home">
+                <article class="hero-image" style="--hero-image: url('/images/fondo5.jpeg'); --hero-attachment: fixed;">
+                    <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.5);">
+                        <div class="hero-image-content conoce-mas-content">
+                            <h2 class="hero-image-title" style="--hero-textcolor: var(--white-color);">
+                                Galería
+                            </h2>
+                            <p>Esta sección es exclusiva para que sigas enamorandote de este hermoso lugar Argentino y de nuestros hogares que son los mejores para disfrutarlo</p>
+                            <div class="button-down">
+                                <a class="move" href="#galeria"><i class="fas fa-chevron-down"></i></a>
+                            </div>
+                        </div>
+                    </aside>
+                </article>
+            </section>
+
+            <section class="slider">
+                <article class="hero-image" style="--hero-image: url('/images/slider-bg.jpeg'); --hero-attachment: fixed;">
+                    <aside class="hero-image-opacity" style="--hero-opacity-color: rgba(0,0,0,0.7);">
+                        <div class="hero-image-content">
+                        <div class="video-content" id="galeria">
+                            <video src="/images/presentacion/arroyo.mp4" autoplay loop muted controls data-smart-video></video>
+                        </div>
+                        <div class="video-content">
+                            <video src="/images/presentacion/atardecer-epico.mp4" autoplay loop muted controls data-smart-video></video>
+                        </div>
+                        <div class="video-content">
+                            <video src="/images/presentacion/bosque.mp4" autoplay loop muted controls data-smart-video></video>
+                        </div>
+                        </div>
+                    </aside>
+                </article>
+            </section>
+        
+        <%- include("./partials/whatsapp.ejs")  %>
+      <%- include("./partials/footer.ejs") %>
+    </div>
+</body>
+</html>

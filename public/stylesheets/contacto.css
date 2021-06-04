@@ -25,3 +25,56 @@
     color: white;
     align-self: center;
 }
+
+.contact-form{
+    --form-ok-color: #4caf50;
+    --form-error-color: #f44336;
+}
+
+.contact-form textarea{
+    resize: none;
+}
+
+.contact-form-response,
+.contact-form-loader{
+    margin-top: 1rem;
+}
+
+.contact-form-response{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact-form-response p.conexion{
+    margin-top: 0;
+}
+
+.contact-form [required]:valid{
+    border: 1px solid var(--form-ok-color);
+}
+
+.contact-form [required]:invalid{
+    border: 1px solid var(--form-error-color);
+}
+
+.contact-form-error {
+    margin-top: -1rem;
+    font-size: 80%;
+    background-color: var(--form-error-color);
+    color: #fff;
+    transition: all 800ms ease;
+}
+
+.contact-form-error.is-active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+.contact-form-loader img{
+    padding: .5rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--first-color);
+}
