@@ -73,6 +73,10 @@
 }
 
 @media screen and (min-width: 1024px){
+    .header{
+        top: 0;
+        right: 0;
+    }
     .menu-btn{
         display: none;
     }
@@ -83,11 +87,12 @@
         flex-direction: row;
         opacity: 1;
         pointer-events: auto;
+        background-color: var(--first-color);
     }
 
     .menu a{
-        padding: 0 1rem;
-        font-size: 1.3rem;
+        padding: 0 .5rem;
+        font-size: .9rem;
     }
 
     .menu a:last-child{
@@ -96,5 +101,11 @@
 
     .menu a:hover{
         background-color: transparent;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .menu a{
+        font-size: 1.10rem;
     }
 }

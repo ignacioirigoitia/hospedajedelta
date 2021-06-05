@@ -101,3 +101,7 @@ img{
 .section {
   padding: 2rem 1rem;
 }
+
+.video-content video{
+  padding: 0 .5rem;
+}

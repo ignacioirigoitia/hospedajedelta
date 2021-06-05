@@ -20,3 +20,9 @@
 .btn-wspa:hover{
     color: white;
 }
+
+@media screen and (min-width: 1024px) {
+    .btn-wspa {
+        bottom: 21px;
+    }
+}
